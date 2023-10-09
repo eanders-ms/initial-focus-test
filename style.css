@@ -1,0 +1,16 @@
+.my-button {
+    outline: none;
+    background-color: transparent;
+}
+
+.my-button::after {
+    content: "Focused: NO";
+}
+
+.my-button:focus {
+    background-color: yellow;
+}
+
+.my-button:focus::after {
+    content: "Focused: YES";
+}
